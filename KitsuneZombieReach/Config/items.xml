@@ -1,10 +1,33 @@
 <config>
+	<!-- Standard walkers — 1.375 -->
 	<set xpath="/items/item[@name='meleeHandMaster']/property[@class='Action0']/property[@name='Range']/@value">1.375</set>
 	<set xpath="/items/item[@name='meleeHandZombie01']/property[@class='Action0']/property[@name='Range']/@value">1.375</set>
 	<set xpath="/items/item[@name='meleeHandZombieShort']/property[@class='Action0']/property[@name='Range']/@value">1.375</set>
 	<set xpath="/items/item[@name='meleeHandZombieShortFeral']/property[@class='Action0']/property[@name='Range']/@value">1.375</set>
 	<set xpath="/items/item[@name='meleeHandZombieBurning']/property[@class='Action0']/property[@name='Range']/@value">1.375</set>
 	<set xpath="/items/item[@name='meleeHandZombieBurningFeral']/property[@class='Action0']/property[@name='Range']/@value">1.375</set>
+
+	<!-- HazMat / Worker / PartyGirl — inherit from meleeHandMaster with no Range override in vanilla, so added explicitly for clarity and guaranteed coverage -->
+	<append xpath="/items/item[@name='meleeHandZombieHazMat']/property[@class='Action0']">
+		<property name="Range" value="1.375"/>
+	</append>
+	<append xpath="/items/item[@name='meleeHandZombieHazMatFeral']/property[@class='Action0']">
+		<property name="Range" value="1.375"/>
+	</append>
+	<append xpath="/items/item[@name='meleeHandZombieWorker']/property[@class='Action0']">
+		<property name="Range" value="1.375"/>
+	</append>
+	<append xpath="/items/item[@name='meleeHandZombieWorkerFeral']/property[@class='Action0']">
+		<property name="Range" value="1.375"/>
+	</append>
+	<append xpath="/items/item[@name='meleeHandZombiePartyGirl']/property[@class='Action0']">
+		<property name="Range" value="1.375"/>
+	</append>
+	<append xpath="/items/item[@name='meleeHandZombiePartyGirlFeral']/property[@class='Action0']">
+		<property name="Range" value="1.375"/>
+	</append>
+
+	<!-- Large zombies — 1.55 -->
 	<set xpath="/items/item[@name='meleeHandZombieCop']/property[@class='Action0']/property[@name='Range']/@value">1.55</set>
 	<set xpath="/items/item[@name='meleeHandzombieMutated']/property[@class='Action0']/property[@name='Range']/@value">1.55</set>
 	<set xpath="/items/item[@name='meleeHandzombieMutatedFeral']/property[@class='Action0']/property[@name='Range']/@value">1.55</set>
@@ -13,7 +36,12 @@
 	<set xpath="/items/item[@name='meleeHandzombieMutatedInfernal']/property[@class='Action0']/property[@name='Range']/@value">1.55</set>
 	<set xpath="/items/item[@name='meleeHandZombieRancher']/property[@class='Action0']/property[@name='Range']/@value">1.55</set>
 	<set xpath="/items/item[@name='meleeHandZombieChuck']/property[@class='Action0']/property[@name='Range']/@value">1.55</set>
+
+	<!-- Crawlers — 1.2 -->
 	<set xpath="/items/item[@name='meleeHandZombie02']/property[@class='Action0']/property[@name='Range']/@value">1.2</set>
 	<set xpath="/items/item[@name='meleeHandZombie02Feral']/property[@class='Action0']/property[@name='Range']/@value">1.2</set>
 	<set xpath="/items/item[@name='meleeHandZombieBurningCrawler']/property[@class='Action0']/property[@name='Range']/@value">1.2</set>
+
+	<!-- Boar — 1.8 (from vanilla 2.2; keeps lunge but takes the edge off) -->
+	<set xpath="/items/item[@name='meleeHandZombieBoar']/property[@class='Action0']/property[@name='Range']/@value">1.8</set>
 </config>

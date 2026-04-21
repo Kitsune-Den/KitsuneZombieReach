@@ -2,8 +2,8 @@
 <xml>
     <Name value="KitsuneZombieReach" />
     <DisplayName value="Kitsune Zombie Reach" />
-    <Version value="1.0.0.0" />
+    <Version value="1.0.1.0" />
     <Description value="Reduces horizontal melee reach on zombie hand items so hits land closer to their on-screen position. Server-side only." />
     <Author value="AdaInTheLab" />
-    <Website value="" />
+    <Website value="https://github.com/Kitsune-Den/KitsuneZombieReach" />
 </xml>
