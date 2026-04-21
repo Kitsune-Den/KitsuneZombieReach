@@ -1,0 +1,19 @@
+<config>
+	<set xpath="/items/item[@name='meleeHandMaster']/property[@class='Action0']/property[@name='Range']/@value">1.375</set>
+	<set xpath="/items/item[@name='meleeHandZombie01']/property[@class='Action0']/property[@name='Range']/@value">1.375</set>
+	<set xpath="/items/item[@name='meleeHandZombieShort']/property[@class='Action0']/property[@name='Range']/@value">1.375</set>
+	<set xpath="/items/item[@name='meleeHandZombieShortFeral']/property[@class='Action0']/property[@name='Range']/@value">1.375</set>
+	<set xpath="/items/item[@name='meleeHandZombieBurning']/property[@class='Action0']/property[@name='Range']/@value">1.375</set>
+	<set xpath="/items/item[@name='meleeHandZombieBurningFeral']/property[@class='Action0']/property[@name='Range']/@value">1.375</set>
+	<set xpath="/items/item[@name='meleeHandZombieCop']/property[@class='Action0']/property[@name='Range']/@value">1.55</set>
+	<set xpath="/items/item[@name='meleeHandzombieMutated']/property[@class='Action0']/property[@name='Range']/@value">1.55</set>
+	<set xpath="/items/item[@name='meleeHandzombieMutatedFeral']/property[@class='Action0']/property[@name='Range']/@value">1.55</set>
+	<set xpath="/items/item[@name='meleeHandzombieMutatedRadiated']/property[@class='Action0']/property[@name='Range']/@value">1.55</set>
+	<set xpath="/items/item[@name='meleeHandzombieMutatedCharged']/property[@class='Action0']/property[@name='Range']/@value">1.55</set>
+	<set xpath="/items/item[@name='meleeHandzombieMutatedInfernal']/property[@class='Action0']/property[@name='Range']/@value">1.55</set>
+	<set xpath="/items/item[@name='meleeHandZombieRancher']/property[@class='Action0']/property[@name='Range']/@value">1.55</set>
+	<set xpath="/items/item[@name='meleeHandZombieChuck']/property[@class='Action0']/property[@name='Range']/@value">1.55</set>
+	<set xpath="/items/item[@name='meleeHandZombie02']/property[@class='Action0']/property[@name='Range']/@value">1.2</set>
+	<set xpath="/items/item[@name='meleeHandZombie02Feral']/property[@class='Action0']/property[@name='Range']/@value">1.2</set>
+	<set xpath="/items/item[@name='meleeHandZombieBurningCrawler']/property[@class='Action0']/property[@name='Range']/@value">1.2</set>
+</config>
