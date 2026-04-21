@@ -1,6 +1,6 @@
 # KitsuneZombieReach
 
-![KitsuneZombieReach](kitsune-zombie-reach.png)
+![KitsuneZombieReach](kitsune-zombie-reach.jpg)
 
 **Shortens zombie melee reach in 7 Days to Die 2.x so hits land where the zombie actually is.**
 
