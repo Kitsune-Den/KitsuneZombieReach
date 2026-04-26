@@ -1,5 +1,12 @@
 # KitsuneZombieReach
 
+🦊 **Part of the [Kitsune Systems Collection](https://github.com/Kitsune-Den)** —
+[KitsunePvPExtended](https://github.com/Kitsune-Den/KitsunePvPExtended) ·
+[KitsuneTrapXP](https://github.com/Kitsune-Den/KitsuneTrapXP) ·
+[KitsuneKitchen7D](https://github.com/Kitsune-Den/KitsuneKitchen7D) ·
+[KitsuneFuelSaver](https://github.com/Kitsune-Den/KitsuneFuelSaver) ·
+[KitsuneFoxacary](https://github.com/Kitsune-Den/KitsuneFoxacary)
+
 ![KitsuneZombieReach](kitsune-zombie-reach.jpg)
 
 **Shortens zombie melee reach in 7 Days to Die 2.x so hits land where the zombie actually is.**
