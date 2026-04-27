@@ -44,4 +44,10 @@
 
 	<!-- Boar — 1.8 (from vanilla 2.2; keeps lunge but takes the edge off) -->
 	<set xpath="/items/item[@name='meleeHandZombieBoar']/property[@class='Action0']/property[@name='Range']/@value">1.8</set>
+
+	<!-- Hostile animals — 1.8 (Bears were 3.1, Dire Wolf and Mountain Lion 2.2, all absurd) -->
+	<set xpath="/items/item[@name='meleeHandAnimalBear']/property[@class='Action0']/property[@name='Range']/@value">1.8</set>
+	<set xpath="/items/item[@name='meleeHandAnimalZombieBear']/property[@class='Action0']/property[@name='Range']/@value">1.8</set>
+	<set xpath="/items/item[@name='meleeHandAnimalDireWolf']/property[@class='Action0']/property[@name='Range']/@value">1.8</set>
+	<set xpath="/items/item[@name='meleeHandAnimalMountainLion']/property[@class='Action0']/property[@name='Range']/@value">1.8</set>
 </config>
