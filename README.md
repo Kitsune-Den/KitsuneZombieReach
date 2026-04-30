@@ -1,6 +1,6 @@
 # KitsuneZombieReach
 
-🦊 **Part of the [Kitsune Systems Collection](https://github.com/Kitsune-Den)** —
+🦊 **Part of the [Kitsune Systems Collection](https://github.com/Kitsune-Den)** ~
 [KitsunePvPExtended](https://github.com/Kitsune-Den/KitsunePvPExtended) ·
 [KitsuneTrapXP](https://github.com/Kitsune-Den/KitsuneTrapXP) ·
 [KitsuneKitchen7D](https://github.com/Kitsune-Den/KitsuneKitchen7D) ·
@@ -13,7 +13,7 @@
 
 You know that thing where a zombie slaps you from what feels like two meters away and you're pretty sure their arm didn't even move? Yeah. Part of that is server/client desync (which no mod can really fix without rewriting the netcode), but the other part is just that some zombie hand items have absurd reach values in the vanilla XML. 2.x pushed Boars up to 2.2m. Two point two meters. For a punch.
 
-This mod tightens horizontal reach on every zombie hand item. Standard walkers, the big ones (Cop, Mutated, Rancher, Chuck), HazMats, Workers, Boars. Crawlers get a slightly harder nerf since they're already on the ground anyway. Hostile animals with absurd reach (Bears at 3.1m — *the same number as a Demolisher shoulder charge* — plus Dire Wolves and Mountain Lions) also get pulled into line.
+This mod tightens horizontal reach on every zombie hand item. Standard walkers, the big ones (Cop, Mutated, Rancher, Chuck), HazMats, Workers, Boars. Crawlers get a slightly harder nerf since they're already on the ground anyway. Hostile animals with absurd reach (Bears at 3.1m ~ *the same number as a Demolisher shoulder charge* ~ plus Dire Wolves and Mountain Lions) also get pulled into line.
 
 It does NOT touch vertical reach. That's a different code path and a different problem. Maybe a future mod.
 
