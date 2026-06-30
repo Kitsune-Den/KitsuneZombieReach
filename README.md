@@ -9,7 +9,7 @@
 
 ![KitsuneZombieReach](kitsune-zombie-reach.jpg)
 
-**Shortens zombie melee reach in 7 Days to Die 2.x so hits land where the zombie actually is.**
+**Shortens zombie melee reach in 7 Days to Die so hits land where the zombie actually is.**
 
 You know that thing where a zombie slaps you from what feels like two meters away and you're pretty sure their arm didn't even move? Yeah. Part of that is server/client desync (which no mod can really fix without rewriting the netcode), but the other part is just that some zombie hand items have absurd reach values in the vanilla XML. 2.x pushed Boars up to 2.2m. Two point two meters. For a punch.
 
@@ -19,7 +19,7 @@ It does NOT touch vertical reach. That's a different code path and a different p
 
 ## Requirements
 
-- 7 Days to Die V2.0+
+- 7 Days to Die V2.0-V3.0 (verified: every targeted hand item and the Action0/Range structure exist in both; values were calibrated against 2.x vanilla)
 - Server-side only. Install on the server (or in single player). Clients don't need anything.
 - EAC-safe. Pure XML config patches, no DLL.
 
