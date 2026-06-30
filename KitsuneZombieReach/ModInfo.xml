@@ -2,7 +2,7 @@
 <xml>
     <Name value="KitsuneZombieReach" />
     <DisplayName value="Kitsune Zombie Reach" />
-    <Version value="1.0.2.0" />
+    <Version value="1.0.3" />
     <Description value="Reduces horizontal melee reach on zombie and hostile-animal hand items so hits land closer to their on-screen position. Covers zombies, the Zombie Boar, Bears (Bear/ZombieBear/Mountain Lion), and Dire Wolves. Server-side only." />
     <Author value="AdaInTheLab" />
     <Website value="https://github.com/Kitsune-Den/KitsuneZombieReach" />
