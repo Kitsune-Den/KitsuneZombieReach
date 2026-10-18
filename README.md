@@ -57,3 +57,7 @@ Quick note on how the table works. `Extends` chains mean Feral/Charged/Infernal 
 Inspired by [KhaineGB's Zombie Reach Adjustment](https://www.nexusmods.com/7daystodie). The idea of tightening zombie reach to make melee feel fair is his, and he did it first. Values and item list in this mod are our own (researched against current 2.x `items.xml`), and coverage has been extended to cover the new Rancher and Chuck zombies, HazMats, Workers, PartyGirls, Boars, and crawlers, none of which Khaine's version covers.
 
 Made by AdaInTheLab.
+
+## License
+
+[CC BY-NC-SA 4.0](LICENSE), with an extra permission for servers that make money: see [NOTICE.md](NOTICE.md). In short: play it, change it and share it, with credit, not for sale, and with changed versions under the same license.
