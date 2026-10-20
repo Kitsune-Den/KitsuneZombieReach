@@ -13,13 +13,13 @@
 
 You know that thing where a zombie slaps you from what feels like two meters away and you're pretty sure their arm didn't even move? Yeah. Part of that is server/client desync (which no mod can really fix without rewriting the netcode), but the other part is just that some zombie hand items have absurd reach values in the vanilla XML. 2.x pushed Boars up to 2.2m. Two point two meters. For a punch.
 
-This mod tightens horizontal reach on every zombie hand item. Standard walkers, the big ones (Cop, Mutated, Rancher, Chuck), HazMats, Workers, Boars. Crawlers get a slightly harder nerf since they're already on the ground anyway. Hostile animals with absurd reach (Bears at 3.1m ~ *the same number as a Demolisher shoulder charge* ~ plus Dire Wolves and Mountain Lions) also get pulled into line.
+This mod tightens horizontal reach on every zombie hand item. Standard walkers, the big ones (Cop, Mutated, Rancher, Chuck), HazMats, Workers, Boars. Crawlers get a slightly harder nerf since they're already on the ground anyway. Hostile animals with absurd reach (Bears at 3.1m ~ *over three meters, for a paw swipe* ~ plus Dire Wolves and Mountain Lions) also get pulled into line. Demolishers, zombie dogs, and vultures come along for the ride too, since they borrow their reach from the master hand item.
 
 It does NOT touch vertical reach. That's a different code path and a different problem. Maybe a future mod.
 
 ## Requirements
 
-- 7 Days to Die V2.0-V3.0 (verified: every targeted hand item and the Action0/Range structure exist in both; values were calibrated against 2.x vanilla)
+- 7 Days to Die V2.0-V3.3 (verified on V3.0 and V3.3.0 b18: every targeted hand item and the Action0/Range structure exist, and vanilla reach values are unchanged from 2.x, which is what they were calibrated against)
 - Server-side only. Install on the server (or in single player). Clients don't need anything.
 - EAC-safe. Pure XML config patches, no DLL.
 
@@ -39,22 +39,24 @@ All values are in meters. "Vanilla" is the stock 2.x value for that item; "Mod" 
 | Standard walkers | `meleeHandMaster`, `meleeHandZombie01`, `meleeHandZombieShort`, `meleeHandZombieShortFeral`, `meleeHandZombieBurning`, `meleeHandZombieBurningFeral` | 1.4 - 1.65 | **1.375** |
 | HazMat / Worker / PartyGirl | `meleeHandZombieHazMat`, `meleeHandZombieHazMatFeral`, `meleeHandZombieWorker`, `meleeHandZombieWorkerFeral`, `meleeHandZombiePartyGirl`, `meleeHandZombiePartyGirlFeral` | 1.65 (inherited) | **1.375** |
 | Large zombies (Cop, Mutated x5, Rancher, Chuck) | `meleeHandZombieCop`, `meleeHandzombieMutated` + Feral/Radiated/Charged/Infernal, `meleeHandZombieRancher`, `meleeHandZombieChuck` | 1.7 - 1.75 | **1.55** |
+| Strong / Demolisher, Zombie Dog, Vultures | `meleeHandZombieStrong`, `meleeHandZombieStrongFeral`, `meleeHandZombieDemolition`, `meleeHandAnimalZombieDog`, `meleeHandAnimalZombieVulture`, `meleeHandAnimalZombieVultureRadiated` | 1.65 (inherited) | **1.375** |
 | Crawlers | `meleeHandZombie02`, `meleeHandZombie02Feral`, `meleeHandZombieBurningCrawler` | 1.3 | **1.2** |
 | Boar (zombie) | `meleeHandZombieBoar` | 2.2 | **1.8** |
 | Hostile animals (Bear, Zombie Bear, Dire Wolf, Mountain Lion) | `meleeHandAnimalBear`, `meleeHandAnimalZombieBear`, `meleeHandAnimalDireWolf`, `meleeHandAnimalMountainLion` | 2.2 - 3.1 | **1.8** |
 
 Quick note on how the table works. `Extends` chains mean Feral/Charged/Infernal variants that don't override `Range` inherit from their parent, so patching the parent cascades to them automatically. That's how Rancher, Chuck, Cop, and the whole Mutated family are covered. HazMat/Worker/PartyGirl needed explicit `append` patches because TFP forgot to give them their own `Range` property, so in vanilla they silently inherited Master's 1.65. Not by design, just sloppy.
 
+The same cascade works on Master itself. Strong zombies, Demolishers, zombie dogs, and vultures have no `Range` of their own either, so patching `meleeHandMaster` drops them from 1.65 to 1.375 as well. That one's on purpose. A Demolisher reaching further than a regular walker never made sense to us.
+
 ## What it does NOT touch
 
-- `meleeHandZombieStrong` / `Demolition` (3.1m shoulder charge, that's the whole point of those)
 - `meleeHandBossGrace` (2.4m, she's a boss, she's allowed)
 - Wolf, Coyote, Snake, Little Bear cub (1.2-1.7m, not egregious)
 - Passive animals
 
 ## Credits
 
-Inspired by [KhaineGB's Zombie Reach Adjustment](https://www.nexusmods.com/7daystodie). The idea of tightening zombie reach to make melee feel fair is his, and he did it first. Values and item list in this mod are our own (researched against current 2.x `items.xml`), and coverage has been extended to cover the new Rancher and Chuck zombies, HazMats, Workers, PartyGirls, Boars, and crawlers, none of which Khaine's version covers.
+Inspired by [KhaineGB's Zombie Reach Adjustment](https://www.nexusmods.com/7daystodie). The idea of tightening zombie reach to make melee feel fair is his, and he did it first. Values and item list in this mod are our own (researched against 2.x `items.xml` and rechecked on 3.3), and coverage has been extended to cover the new Rancher and Chuck zombies, HazMats, Workers, PartyGirls, Boars, and crawlers, none of which Khaine's version covers.
 
 Made by AdaInTheLab.
 
