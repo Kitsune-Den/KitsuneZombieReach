@@ -1,5 +1,5 @@
 <config>
-	<!-- Standard walkers — 1.375 -->
+	<!-- Standard walkers — 1.375. Master also cascades to Strong/Demolition, ZombieDog and the vultures (no Range of their own), on purpose -->
 	<set xpath="/items/item[@name='meleeHandMaster']/property[@class='Action0']/property[@name='Range']/@value">1.375</set>
 	<set xpath="/items/item[@name='meleeHandZombie01']/property[@class='Action0']/property[@name='Range']/@value">1.375</set>
 	<set xpath="/items/item[@name='meleeHandZombieShort']/property[@class='Action0']/property[@name='Range']/@value">1.375</set>
